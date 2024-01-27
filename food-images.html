@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,200&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .images {
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .pp {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .pp img {
+            height: 200px;
+            width: 200px;
+            border: solid 5px rgb(248, 115, 66);
+        }
+
+        .pp p {
+            margin: 10px auto 10px;
+            font-size: 18px;
+        }
+
+        .r-images {
+            margin-top: 90px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .tag {
+
+            text-align: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .button-ex {
+            font-size: 28px;
+            position: relative;
+            margin-top: 20px;
+            border-radius: 50px;
+            padding: 10px 22px 13px;
+            background-color: #21193b;
+            color: white;
+
+        }
+
+        .balloon {
+            height: 260px;
+            z-index: 2;
+            position: absolute;
+            margin-right: 1000px;
+            margin-top: 0;
+            margin-bottom: 100px;
+
+        }
+
+        .images2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            border: solid 5px #ec6939;
+            margin: 10px;
+            padding: 30px;
+
+        }
+
+        .pp2 {
+            height: 200px;
+            width: 200px;
+            margin-bottom: 100px;
+            border-radius: 100px;
+
+        }
+    </style>
+    <div class="r-images">
+        <h1 style="font-size: 28px;margin-bottom:30px"> <i class="fas fa-fire"
+                style="color:  rgb(248, 115, 66);font-size:larger"></i>&nbsp;Trending Categories</h1>
+        <div class="images">
+
+            <div class="pp">
+                <img class="img-circle" src="https://i.pinimg.com/564x/63/5c/6c/635c6c77369363d9a174f67224528cae.jpg"
+                    alt="dog food">
+                <p>Dog Food</p>
+            </div>
+            <div class="pp">
+                <img class="img-circle" src="https://i.pinimg.com/564x/b8/9e/72/b89e72e7d69531561043c4b241eb407e.jpg"
+                    alt="dof treat">
+                <p>Dog Treats</p>
+            </div>
+            <div class="pp">
+                <img class="img-circle" src="https://i.pinimg.com/564x/5e/94/1a/5e941ade7bbcba496d9a28d97d7ec229.jpg"
+                    alt="winterwear">
+                <p>Winterwear</p>
+            </div>
+            <div class="pp">
+                <img class="img-circle" src="https://i.pinimg.com/564x/ac/74/13/ac7413e51547546bc537a306fe004288.jpg"
+                    alt="cat food">
+                <p> Cat Food</p>
+            </div>
+            <div class="pp">
+                <img class="img-circle" src="https://i.pinimg.com/736x/d2/d4/8f/d2d48fd9ea747b750fbec2eb79a8b4ac.jpg"
+                    alt="cat treat">
+                <p>Cat Treats</p>
+            </div>
+            <div class="pp">
+                <img class="img-circle" src="https://i.pinimg.com/564x/b1/6a/3f/b16a3f1abb02b0ed2f9cfd29631379f2.jpg"
+                    alt="cat litter">
+                <p>Cat Litter</p>
+            </div>
+            <div class="pp">
+                <img class="img-circle" src="https://i.pinimg.com/564x/53/c2/b3/53c2b332a5e5ea43907401faf898846f.jpg"
+                    alt="beds">
+                <p>Beds & Mats</p>
+            </div>
+            <div class="pp">
+                <img class="img-circle" src="https://i.pinimg.com/564x/00/d6/c5/00d6c56a1502b276de0ca5e607dbda76.jpg"
+                    alt="harnesses">
+                <p>Harnesses</p>
+            </div>
+            <div class="pp">
+                <img class="img-circle" src="https://i.pinimg.com/564x/ee/c6/38/eec6386c0c0ecb9eeee99a2e503a8bc5.jpg"
+                    alt="bowls">
+                <p>Bowls & Diners</p>
+            </div>
+
+            <div class="pp">
+                <img class="img-circle" src="https://i.pinimg.com/564x/20/10/f4/2010f4568746f3dee73f49ce6f775772.jpg"
+                    alt="grooming">
+                <p>Grooming</p>
+            </div>
+            <div class="pp">
+                <img class="img-circle" src="https://i.pinimg.com/564x/a3/19/72/a31972c59fbc0250639cfd82fd404723.jpg"
+                    alt="toys">
+                <p>Toys</p>
+            </div>
+            <div class="pp">
+                <img class="img-circle" src="https://i.pinimg.com/564x/09/64/03/0964038201b98f6972661cdca7d3a60b.jpg"
+                    alt="supp">
+                <p>Supplements</p>
+            </div>
+
+        </div>
+    </div>
+    <!-- next -->
+    <div
+        style="margin: 50px;background-color:#ffffff;padding:8px;border:solid 5px #ed6939;border-radius:20px;position:relative">
+
+        <h1 class="tag"><i class="fas fa-fire"
+                style="color:  rgb(248, 115, 66);font-size:60px;position:relative;padding:2px 10px"></i>Sharing treat
+            time provides quality moments for <br>
+            <span style="color: #ed6939;font-weight:900">Bonding,creating lasting memories.</span>
+        </h1>
+
+    </div>
+    <!-- next -->
+    <div style="background-color: rgb(255, 255, 255); padding:10px">
+        <div style="margin: 30px;background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%,
+    rgba(203,187,255,1) 62%)
+    ;padding:8px;
+    padding:40px;
+    border-radius:20px;
+    align-items:center;
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    border:solid 2px black">
+            <h1>Unleash the joy with </h1>
+            <h1 style="border:solid 2px rgb(0, 0, 0);
+   background-color:#21193b;
+   padding:10px 20px 10px;
+   color:rgb(248, 255, 60);
+   font-size:50px;
+   font-weight:lighter;
+   "><span style="font-weight: 900;">HUFT</span> TREATS</h1>
+            <p style="font-size: 32px;">More than 100 options to choose from <i class="fas fa-cat"
+                    style="color:#21193b;"></i></p>
+            <img class="balloon" src="images/balloon1.png" alt="balloon">
+            <button class="button-ex">Explore now <i class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+    <!-- food -->
+    <br>
+
+    <h1 style="font-size:28px;padding:20px"> <i class="fas fa-award"
+            style="color:  rgb(255, 218, 10);font-size:larger"></i>&nbsp;Top Food Brands</h1>
+    <div style="padding: auto;background: rgb(255,255,255);">
+        <div class="images2">
+            <div class="pp2">
+                <img src="https://i.pinimg.com/564x/c9/f6/ec/c9f6eccb9466aec8cc8574358f95c767.jpg" alt="Royal Canin"
+                    height="200px">
+                <p style="text-align: center; line-height: 1px;font-size:18px;margin:20px">Royal Canin</p>
+                <hr style="height:2px;border-width:0;color:gray;background-color:#ec6939;width:89px">
+                <p style="text-align: center;font-size:16px">Flat 80% OFF</p>
+            </div>
+            <div class="pp2">
+                <img src="https://i.pinimg.com/564x/4f/d5/12/4fd51289b2a32d325f0b726e9f46af27.jpg" alt="Farmina"
+                    height="200px">
+                <p style="text-align: center; line-height: 1px;font-size:18px;margin:20px">Royal Canin</p>
+                <hr style="height:2px;border-width:0;color:gray;background-color:#ec6939;width:89px">
+                <p style="text-align: center;font-size:16px">Flat 80% OFF</p>
+            </div>
+            <div class="pp2">
+                <img src="https://i.pinimg.com/564x/c8/bd/fc/c8bdfc961f248c0df54120927e91ab57.jpg" alt="cat food"
+                    height="200px">
+                <p style="text-align: center; line-height: 1px;font-size:18px;margin:20px">Royal Canin</p>
+                <hr style="height:2px;border-width:0;color:gray;background-color:#ec6939;width:89px">
+                <p style="text-align: center;font-size:16px">Flat 80% OFF</p>
+            </div>
+            <div class="pp2">
+                <img src="https://i.pinimg.com/564x/5e/c1/c0/5ec1c07bd321e5f782e435160ab70373.jpg" alt="Royal Canin"
+                    height="200px">
+                <p style="text-align: center; line-height: 1px;font-size:18px;margin:20px">Royal Canin</p>
+                <hr style="height:2px;border-width:0;color:gray;background-color:#ec6939;width:89px">
+                <p style="text-align: center;font-size:16px">Flat 80% OFF</p>
+            </div>
+            <div class="pp2">
+                <img src="https://i.pinimg.com/564x/ef/61/20/ef6120603dd087178a113ba514e0f070.jpg" alt="Royal Canin"
+                    height="200px">
+                <p style="text-align: center; line-height: 1px;font-size:18px;margin:20px">Royal Canin</p>
+                <hr style="height:2px;border-width:0;color:gray;background-color:#ec6939;width:89px">
+                <p style="text-align: center;font-size:16px">Flat 80% OFF</p>
+            </div>
+            <div class="pp2">
+                <img src="https://i.pinimg.com/564x/ec/55/21/ec5521aec9866f24d5e85ffe2c51dc93.jpg" alt="Royal Canin"
+                    height="200px">
+                <p style="text-align: center; line-height: 1px;font-size:18px;margin:20px">Royal Canin</p>
+                <hr style="height:2px;border-width:0;color:gray;background-color:#ec6939;width:89px">
+                <p style="text-align: center;font-size:16px">Flat 80% OFF</p>
+            </div>
+            <div class="pp2">
+                <img src="https://i.pinimg.com/564x/69/59/bf/6959bfea7a19e9373d9402e21d4b86e0.jpg" alt="Royal Canin"
+                    height="200px">
+                <p style="text-align: center; line-height: 1px;font-size:18px;margin:20px">Royal Canin</p>
+                <hr style="height:2px;border-width:0;color:gray;background-color:#ec6939;width:89px">
+                <p style="text-align: center;font-size:16px">Flat 80% OFF</p>
+            </div>
+            <div class="pp2">
+                <img src="https://i.pinimg.com/564x/04/db/a9/04dba90a945542cbc2da4a58cf668e45.jpg" alt="Royal Canin"
+                    height="200px">
+                <p style="text-align: center; line-height: 1px;font-size:18px;margin:20px">Royal Canin</p>
+                <hr style="height:2px;border-width:0;color:gray;background-color:#ec6939;width:89px">
+                <p style="text-align: center;font-size:16px">Flat 80% OFF</p>
+            </div>
+            <div class="pp2">
+                <img src="https://i.pinimg.com/564x/23/77/20/237720853824794ef34572fa8c768525.jpg" alt="Royal Canin"
+                    height="200px">
+                <p style="text-align: center; line-height: 1px;font-size:18px;margin:20px">Royal Canin</p>
+                <hr style="height:2px;border-width:0;color:gray;background-color:#ec6939;width:89px">
+                <p style="text-align: center;font-size:16px">Flat 80% OFF</p>
+            </div>
+            <div class="pp2">
+                <img src="https://i.pinimg.com/736x/c1/14/52/c11452a8c8fcb07aa09b857e308e72b2.jpg" alt="Royal Canin"
+                    height="200px">
+                <p style="text-align: center; line-height: 1px;font-size:18px;margin:20px">Royal Canin</p>
+                <hr style="height:2px;border-width:0;color:gray;background-color:#ec6939;width:89px">
+                <p style="text-align: center;font-size:16px">Flat 80% OFF</p>
+            </div>
+            <div class="pp2">
+                <img src="https://i.pinimg.com/564x/01/c3/0f/01c30f4ef48bb57988816095f540f2a3.jpg" alt="Royal Canin"
+                    height="200px">
+                <p style="text-align: center; line-height: 1px;font-size:18px;margin:20px">Royal Canin</p>
+                <hr style="height:2px;border-width:0;color:gray;background-color:#ec6939;width:89px">
+                <p style="text-align: center;font-size:16px">Flat 80% OFF</p>
+            </div>
+            <div class="pp2">
+                <img src="https://i.pinimg.com/564x/d3/0f/d1/d30fd11babe31eb93c0fc535c526c875.jpg" alt="Royal Canin"
+                    height="200px">
+                <p style="text-align: center; line-height: 1px;font-size:18px;margin:20px">Royal Canin</p>
+                <hr style="height:2px;border-width:0;color:gray;background-color:#ec6939;width:89px">
+                <p style="text-align: center;font-size:16px">Flat 80% OFF</p>
+            </div>
+
+        </div>
+    </div>
+    <!-- 2 contents 
+    display: grid;
+            grid-template-columns: 2fr;
+            grid-template-rows: 200px 200px;-->
+    <style>
+        .contents {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #ec6939;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            margin: 0px;
+        }
+
+        .c1, .c2
+         {
+         
+            background-color: #000000;
+            margin: 0px;
+            padding: 150px 150px;
+            border-radius: 20px;
+            justify-content: space-around;
+            gap: 0px;
+        }
+    </style>
+    <div class="contents">
+        <div class="c2" style="display: flex;">hii
+            <div style="padding: 15px 15px;">hvujhvhi</div>
+       
+        </div>
+        <div class="c2">hii
+           
+        </div>
+        <div class="c2">hii
+           
+        </div>
+        <div class="c2">hii
+           
+        </div>
+
+    
+</body>
+
+</html>

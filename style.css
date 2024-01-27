@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
-
 body {
   margin: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
 }
 
 /* CSS for header */
@@ -13,14 +15,19 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #f5f5f5;
+  position: fixed;
+  width: 100%;
+  padding: 0px 0;
+  z-index: 1000;
+  height: 80px;
 }
 
 .header .logo {
   font-size: 25px;
-  font-family: 'Sriracha', cursive;
   color: #000;
   text-decoration: none;
   margin-left: 30px;
+  font-weight: 600;
 }
 
 .nav-items {
@@ -34,37 +41,36 @@ body {
 .nav-items a {
   text-decoration: none;
   color: #000;
-  padding: 35px 20px;
+  padding: 5px 20px;
 }
 
-/* CSS for main element */
+
 #intro {
   background-color: #585858;
 }
+
 .intro {
-  
+
   flex-direction: column;
   justify-content: right;
- 
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 .img-bg {
   width: 100%;
-  height: 750px;
-  background:  url(https://images.unsplash.com/photo-1602783107941-968db2024e22?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
-  background-size:cover;
+  height: 650px;
+  background: url(images/doggy.jpg);
+  background-size: cover;
 
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   background-clip: initial;
 }
 
 .intro h1 {
-  font-family: sans-serif;
   font-size: 75px;
   color: #ffffff;
   font-weight: 900;
   margin: 0;
-  padding: 70px 30px 10px 700px;
+  padding: 120px 30px 10px 700px;
   text-align: justify;
 }
 
@@ -79,8 +85,8 @@ body {
 }
 
 
-.btn-home{
- 
+.btn-home {
+
   color: white;
   background-color: rgb(237, 105, 57);
   border-radius: 40% 50% / 50%;
@@ -93,6 +99,7 @@ body {
   margin: 0px 100px 0px 750px;
 
 }
+
 .btn-home:hover {
   color: rgb(255, 255, 255);
   background-color: rgb(241, 141, 104);
@@ -102,9 +109,8 @@ body {
 
 .about-me {
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 40px 80px;
+  padding: 40px 100px 40px 100px;
   border-top: 2px solid #eeeeee;
   background-color: #f4eeee;
 }
@@ -122,6 +128,7 @@ body {
   color: #585858;
   margin: 10px 0;
 }
+
 .view-btn {
   background-color: rgb(252, 152, 115);
   color: white;
@@ -131,9 +138,11 @@ body {
   font-weight: 600;
   padding: 12px 16px;
 }
+
 .view-btn:hover {
   background-color: rgb(248, 115, 66);
 }
+
 /* CSS for footer */
 .footer {
   display: flex;
@@ -174,97 +183,120 @@ body {
   color: #ffffff;
   padding: 10px 20px;
 }
+
 .links a {
-font-weight: 700;
-font-size: 18px;
+  font-weight: 700;
+  font-size: 18px;
 }
+
 .links a:hover {
   font-weight: 900;
-  color:#eeeeee;
+  color: #eeeeee;
 }
-.pet-food {
-  height: 90vh;
-}
+
+
 /* 2 */
 .container {
-    display: flex;
-    flex-direction: row-reverse; /* Reverse the order to have image on the right */
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  /* Reverse the order to have image on the right */
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
 
 .content {
-    flex: 1; /* Take up remaining space */
-    padding: 30px;
-    box-sizing: border-box;
-    font-size: 23px;
+  flex: 1;
+  /* Take up remaining space */
+  padding: 30px;
+  box-sizing: border-box;
+  font-size: 23px;
 }
+
 .content h1 {
   font-weight: 700;
   font-size: 60px;
 }
+
 .pre {
-    color: rgb(237, 105, 57);
-    font-weight: 700;
+  color: rgb(237, 105, 57);
+  font-weight: 700;
 }
 
 .image {
-    flex: 1; /* Take up remaining space */
-    text-align: right; /* Align image to the right */
+  flex: 1;
+  /* Take up remaining space */
+  text-align: right;
+  /* Align image to the right */
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    background-size:unset;
+.image img {
+  max-width: 100%;
+  height: auto;
+  background-size: unset;
 }
-#heart,#sun {
-    color:rgb(248, 115, 66);
+
+#heart,
+#sun {
+  color: rgb(248, 115, 66);
+
 }
-#heart:hover,#sun:hover{
+
+#heart:hover,
+#sun:hover {
   color: #000;
 }
 
 .home {
   border-radius: 50% black;
   font-size: 18px;
-  font-weight:600;
+  font-weight: 600;
 }
+
 .home:hover {
-    color: rgb(252, 152, 115);
+  color: rgb(252, 152, 115);
 }
+
 .btn {
   font-size: 18px;
-  font-weight:600;
+  font-weight: 600;
 }
+
 .btn:hover {
   color: rgb(252, 152, 115);
   font-size: 18px;
-  font-weight:600;
+  font-weight: 600;
 }
+
 .dropdown-menu {
   font-size: 18px;
-  font-weight:600;
+  font-weight: 600;
 }
+
 .dropdown-menu li a:hover {
   color: rgb(252, 152, 115);
   font-size: 18px;
-  font-weight:600;
+  font-weight: 600;
 }
-.logo:hover{
+
+.logo:hover {
   color: rgb(252, 152, 115);
 }
+
 .container2 {
   display: flex;
 }
+
 .content2 {
-  
+
   display: flex
 }
+
 .content2 p {
-  text-align:inherit;
+  text-align: inherit;
+  text-transform: none;
 }
+
 /* Cards */
 article {
 
@@ -284,6 +316,10 @@ article a::after {
   inset-inline: 0;
   cursor: pointer;
   content: "";
+}
+
+.balloon {
+  padding-left: 200px;
 }
 
 /* basic article elements styling */
@@ -314,6 +350,7 @@ article img {
   padding: 26px;
 
 }
+
 .article-body h2 {
   font-size: 40px;
 }
@@ -324,10 +361,12 @@ article a {
   text-decoration: none;
   color: rgb(0, 0, 0);
 }
+
 article p {
   word-spacing: 2px;
 
 }
+
 article a:focus {
   outline: 1px dotted rgb(248, 115, 66);
 }
@@ -351,11 +390,6 @@ article:has(:hover, :focus) {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
-
-/************************ 
-Generic layout (demo looks)
-**************************/
-
 *,
 *::before,
 *::after {
@@ -364,24 +398,25 @@ Generic layout (demo looks)
 
 
 .articles {
-  display: grid;
-  max-width: 1200px;
+  display: flex;
+  max-width: 1700px;
   margin-inline: auto;
   padding-inline: 24px;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 24px;
   margin: 0;
-  padding: 48px 0;
+  padding: 48px 15px;
   line-height: 2.6rem;
-  min-height: 100vh;
+  /* background-color: #000; */
+  width: fit-content
 }
 
 @media screen and (max-width: 960px) {
   article {
-    container: card/inline-size;
+    container: card;
   }
+
   .article-body p {
-    display:none;
+    display: none;
   }
 }
 
@@ -391,14 +426,17 @@ Generic layout (demo looks)
     grid-template-columns: 100px 1fr;
     gap: 16px;
   }
+
   .article-body {
-    padding-left: 0;
+    padding-left: 10px;
   }
+
   figure {
     width: 100%;
     height: 100%;
     overflow: hidden;
   }
+
   figure img {
     height: 100%;
     aspect-ratio: 1;
@@ -407,11 +445,11 @@ Generic layout (demo looks)
 }
 
 .sr-only:not(:focus):not(:active) {
-  clip: rect(0 0 0 0); 
+  clip: rect(0 0 0 0);
   clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
   position: absolute;
-  white-space: nowrap; 
+  white-space: nowrap;
   width: 1px;
 }
